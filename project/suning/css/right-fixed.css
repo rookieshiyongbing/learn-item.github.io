@@ -1,0 +1,45 @@
+
+.fixbar-container{
+	position: fixed;
+	bottom: 20px;
+	right:10px;
+}
+.fixbar-container li a{
+	position: relative;
+	display: block;
+	width: 43px;
+	height: 43px;
+	border: 1px solid #eee;
+	margin-bottom: -1px;
+	background: url(../img/right-fixed.png) no-repeat;
+}
+
+.fixbar-container li a span{
+	display: none;
+}
+.fixbar-container li a:hover span{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	display: block;
+	background: #bbb;
+	color: #FFF;
+	font-size: 12px;
+	padding: 2px 5px;
+	text-align: center;
+}
+
+
+.fixbar-container li:nth-of-type(1) a{
+	background-position: 0 -88px;
+}
+
+.fixbar-container li:nth-of-type(2) a{
+	background-position: 0 -132px;
+}
+.fixbar-container li:nth-of-type(3) a{
+	background-position: 0 -44px;
+}
+.fixbar-container li:nth-of-type(2) a{
+	background-position: 0 0;
+}

@@ -1,0 +1,210 @@
+/*导航*/
+.bottom-nav{
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+}
+
+/*全部分类*/
+.all-category{
+	width: 246px;
+	flex:0 1 246px;
+	position: relative;
+
+}
+.all-category>span{
+	display: block;
+	height: 40px;
+	background-image: url(http://s0.meituan.net/bs/file/?f=fewww:www/css/si/base.png@b8a7b16);
+    background-repeat: no-repeat;
+    background-position: 0 -31px;
+    padding-left:15px;
+    font-size: 16px;
+    color: #FFF;
+    line-height: 40px;
+	background: #f90;
+}
+/*一级导航*/
+.category-nav-level-1{
+	position: absolute;
+	height: 477px;
+	border: 1px solid #eee;
+	width: 100%;
+	background: #444;
+	color: #FFFFFF;
+}
+
+.category-nav-level-1 li:hover{
+	background:  #e1dedd;
+	transition: .3s;
+}
+.category-nav-item-1-wrap{
+    display: none;
+	position: absolute;
+	top: 40px;
+	left: 247px;
+	width: 400px;
+	height: 416px;
+	background-color: #fff;
+	z-index: 199;
+	color: #666;
+	overflow: hidden;
+}
+.detailed .classify{
+	margin:0 15px 35px 15px;
+}
+.category-nav-item-1-wrap{
+	/*position: absolute;*/
+	/*top: 40px;*/
+	/*left: 247px;*/
+	/*width: 400px;*/
+	/*height: 474px;*/
+	/*background-color: #fff;*/
+	/*z-index: 199;*/
+	/*color: #666;*/
+	/*overflow: hidden;*/
+}
+ .detailed{
+	 display: none;
+	 position: absolute;
+	 top: 0;
+	 left: 244px;
+	 width: 400px;
+	 height: 475px;
+	 background-color: #fff;
+	 z-index: 199;
+	 color: #666;
+	 overflow: hidden;
+}
+.active2{
+	top:-54px;
+}
+.active3{
+	top:-107px;
+}
+.active4{
+	top:-160px;
+}
+.active5{
+	top:-213px;
+}
+.active6{
+	top:-266px;
+}
+.active7{
+	top:-320px;
+}
+.active8{
+	top:-373px;
+}
+.active9{
+	top:-426px;
+}
+
+.detailed .food{
+	margin: 10px 15px 0 15px;
+	height: 22px;
+	line-height: 22px;
+	padding-bottom: 32px;
+	border-bottom: 1px solid #e5e5e5;
+
+}
+.detailed .food  h2{
+	font-size: 16px;
+	font-weight: 500;
+	color: #444;
+	cursor: pointer;
+	float: left;
+}
+.detailed .food p{
+	float: right;
+	font-size: 12px;
+	color: #999;
+	font-weight: 400;
+	cursor: pointer;
+}
+.category-nav-item-1 .detailed .classify span{
+	color: #444;
+	font-size: 12px;
+	display: inline-block;
+	margin-right: 16px;
+	/*margin-top: 10px;*/
+	cursor: pointer;
+
+}
+
+
+/*右边导航*/
+.bottom-nav .nav-bar{
+	flex: 1;
+	background:#444444;
+}
+.nav-bar li{
+	float: left;
+}
+
+.nav-bar li a{
+	font-size: 16px;
+	font-weight: bold;
+	color: #FFF;
+	line-height: 40px;
+	height: 40px;
+	min-width: 90px;
+	text-align: center;
+	display: block;
+	padding: 0 18px;
+}
+.nav-bar li a:hover{
+	color:#f90;
+}
+
+
+
+
+
+/*全部分类下的 分类一级导航*/
+.category-nav-level-1 .category-nav-item-1{
+	height: 53px;
+	border-top:1px solid #eee;
+	/*margin: 0 10px;*/
+	padding:15px 20px ;
+	line-height: 25px;
+	position: relative;/*给箭头相对定位*/
+}
+/*第一个一级子导航没有顶部边框*/
+.category-nav-level-1 .category-nav-item-1:first-child{
+	border-top: none;
+}
+
+/*二级导航*/
+.category-nav-level-2{
+	text-align: right;
+	font-size: 0;
+	padding-right: 17px;/*给箭头留出位置*/
+}
+.category-nav-level-2 dt{
+	float: left;
+	font-size: 14px;
+	color: #fff;
+	font-weight: bold;
+}
+.category-nav-level-2 dd{
+	display: inline-block;
+	font-size: 12px;
+	margin-left:5px ;
+}
+/*悬浮颜色变绿*/
+.category-nav-level-2 a:hover{
+	color: #826be1;
+}
+
+.category-nav-level-1 .icon-right-arrow-bold{
+	font-size: 12px;
+	color: #ddd;
+	position: absolute;
+	left:210px;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    
+}

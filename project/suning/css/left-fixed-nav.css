@@ -1,0 +1,46 @@
+/*固定定位导航*/
+.fixed-nav{
+	position: fixed;
+	left: 5px;
+	top:50%;
+	
+	border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    width: 43px;
+    font-size: 12px;
+    
+    background: #FFF;/*防止背景透明*/
+}
+
+.fixed-nav a{
+	display: block;
+    border: 1px solid #eee;
+    /*消除重叠的边框*/
+    margin-top: -1px;
+    margin-bottom: -1px;
+    
+    padding: 11px 8px 8px;
+    min-height: 14px;
+    height: auto!important;
+    height: 14px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+}
+.fixed-nav a:hover{
+	background: #826be1;
+	color: #FFF;
+}
+.fixed-nav a i{
+	display: block;
+    font-size: 20px;
+}
+
+
+@media only screen and (max-width: 1325px) {
+	.fixed-nav{
+		display: none;
+	}
+}
+
+

@@ -1,0 +1,200 @@
+/*分类头部*/
+.category-item{
+	margin-bottom: 40px;
+}
+.category-item-head{
+	margin-bottom: 12px;
+}
+.category-item-head .title{
+	/*float: left;*/
+	height:29px;
+    line-height: 29px;
+    font-size: 20px;
+}
+.category-item-head .title img{
+	width: 20px;
+	height: 20px;
+}
+.category-item-head .title i{
+	display: inline-block;
+	width: 38px;
+	height: 29px;
+	line-height: 29px;
+	color: #FFF;
+	background-image: url(../img/content-bg2.png);
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.category-item-nav{
+	float: right;
+	line-height: 29px;
+}
+.category-item-nav li{
+	float: left;
+}
+.category-item-nav li a{
+	font-size: 14px;
+	line-height: 14px;
+	color: #666;
+	padding: 0 9px;
+	border-right: 1px solid #ddd;
+}
+
+.category-item-nav li a:hover{
+	color: #2bb8aa;
+}
+
+.category-item-nav li:last-child a{
+	border-right: none;
+}
+
+
+/*每一个块*/
+.category-item-detail{
+	border: 1px solid #eee;
+	border-right: none;
+    /*border-bottom: none;*/
+   	margin-bottom: -1px;/*如果不把底部边框设置为none，就需要让底边框为-1，来消除多出来的1px边框;缺点，当浏览器放大的时候，会有问题*/
+    width: 292px;
+    padding: 12px 15px 0;
+    float: left;
+    position: relative;/*帮助标记进行定位*/
+}
+/*每到4的倍数，就加上右边框*/
+.category-item-detail:nth-of-type(4n){
+	border-right: 1px solid #eee;
+	width: 293px;/*微调*/
+}
+
+.category-item-detail:last-child{
+	border-right: 1px solid #eee;
+	width: 293px;/*微调*/
+}
+
+
+/*图片封面*/
+.category-item-detail .cover img{
+	width:260px;
+	height:174px;
+	display: block;
+	margin-bottom: 12px;
+}
+.category-item-detail .mark{
+	position: absolute;
+	left: 15px;
+	top: 8px;
+	font-size: 0;
+}
+.category-item-detail .mark span{
+	font-size: 12px;
+	display: inline-block;
+    width: 43px;
+    height: 40px;
+    background-image: url(../img/content-bg.png);
+    background-repeat: no-repeat;
+    margin-right: -3px;
+}
+/*多套餐*/
+.mark-duotaocan{
+	background-position: 0 -493px;
+}
+/*免预约*/
+.mark-mianyuyue{
+	background-position: 0 -451px;
+}
+
+
+/*标题区域*/
+.category-item-detail .title{
+	display: block;
+}
+.category-item-detail .title span:first-child{
+	font-size: 14px;
+	font-weight: bold;
+	color: #333;
+	text-indent: -.5em;/*中文符号比一般英文字符更占用空间*/
+}
+.category-item-detail .title span:last-child{
+	font-size: 14px;
+	/*溢出省略号*/
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	
+}
+.category-item-detail .title span{
+	display: block;
+	height: 24px;
+    line-height: 24px;
+}
+
+.category-item-detail .title:hover span{
+	color: #333;
+}
+
+/*价格区域*/
+.category-item-detail .detail{
+	margin-bottom: 10px;
+}
+
+/*价格*/
+.category-item-detail .price{
+	font-size: 20px;
+	color: #f76120;
+}
+/*门店*/
+.category-item-detail .value,.category-item-detail .sales{
+	font-size: 12px;
+	color: #999;
+}
+/*已销售*/
+.category-item-detail .sales{
+	float: right;
+	margin-top: 8px;
+}
+
+/*评价*/
+.category-item-detail .comment{
+	border-top: 1px dotted #ddd;
+	height: 46px;
+}
+.category-item-detail .comment a{
+	float: right;
+	height: 32px;
+	line-height: 32px;
+	font-size: 12px;
+}
+
+/*未评论灰色星星状态*/
+.comment-star {
+	display: inline-block;
+    width: 60px;
+    height: 12px;
+    line-height: 12px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQTUyQTE3RDREMjMxMUU0QUVDRUE4Q0Q4NUVCOUI2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQTUyQTE3RTREMjMxMUU0QUVDRUE4Q0Q4NUVCOUI2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRBNTJBMTdCNEQyMzExRTRBRUNFQThDRDg1RUI5QjY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRBNTJBMTdDNEQyMzExRTRBRUNFQThDRDg1RUI5QjY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+1GZEFgAAAE5QTFRF0M/Pz8/P0NDQ0dHR0dDQ9PT00tHR7u7u5+fn8fHx0M7O8vLy8PDw2dnZ+fn539/f7Ozs/v7+0tLS29vb4eHh1dXV6+vr+/v79/f3////1VvExQAAABp0Uk5T/////////////////////////////////wAUIgDaAAAAW0lEQVR42kSNWQ6AMAhEYWrt6r5y/4tKicYXwuR9wJA0fLIg29vwS2Gun4ycM64mrJCiAbpXenGexLvOQGo3AU7BbA8KeoW8yQkHnWAygWs4sJtw1IolssgjwACFHAecmh1z0QAAAABJRU5ErkJggg==);
+	background-repeat: repeat-x;
+}
+/*评论后星星*/
+.comment-rate{
+	display: inline-block;
+    width: 86%;
+    height: 12px;
+    line-height: 12px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAMAAABhq6zVAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDpEQTUyQTE3OTREMjMxMUU0QUVDRUE4Q0Q4NUVCOUI2OSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDpEQTUyQTE3QTREMjMxMUU0QUVDRUE4Q0Q4NUVCOUI2OSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkRBNTJBMTc3NEQyMzExRTRBRUNFQThDRDg1RUI5QjY5IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkRBNTJBMTc4NEQyMzExRTRBRUNFQThDRDg1RUI5QjY5Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+IOVWLgAAAJ9QTFRF/3Yk/YYa/YEZ/HUW/HsX/+DO/XEd/nQf/ngf/3kj/3st/oEf/nQe/3gj/Ysb/9jA//Lq/9O5/38i/6Nr/XEY/X8b/8yu/6l1/8el/9a9/oke/nYh/nYg/5lc/9W7/34i//38/oEd/3kp/9nC/8mp/+fY/34x/XIZ/8+y/5FP/oAe/86w/4hA/97K/7qQ/X4c/9rF/ogf/7qR/+7k////tj60fwAAADV0Uk5T/////////////////////////////////////////////////////////////////////wB8tdAKAAAAcElEQVR42mIwAQFWSTDFACZlNREcA3khORjHmNNQilcAxAECTm4+Pm5eEEtVTYsRDBS5WBlMWLn0mYBAVIkfpEeDgwUIOFTABijLMAOBtC6YI8Gjzs4uwiMG5gizMQhq67CJgzkMRkArFPSALIAAAwDFqBGvMjYe1AAAAABJRU5ErkJggg==);
+	background-repeat: repeat-x;
+}
+
+
+/*底部*/
+.category-item-foot a{
+	display: block;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    font-size: 14px;
+    background: #f6f6f6;
+    color: #666;
+}
+.category-item-foot a:hover{
+	color: #2bb8aa;
+}

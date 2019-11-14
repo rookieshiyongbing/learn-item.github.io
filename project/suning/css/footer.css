@@ -1,0 +1,123 @@
+/*底部*/
+footer{
+	
+	padding-bottom: 30px;
+}
+footer .site-info{
+	width: 1170px;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+    border-top: 3px double #EEE;/*双线*/
+	display: flex;
+}
+.site-info-item{
+	flex: 18.5%;
+	/*border: 1px solid red;*/
+	padding: 20px 0 35px 10px;
+}
+.site-info-item:last-child{
+	flex: 26%;
+	/*border: 1px solid red;*/
+}
+
+.site-info-item a:hover{
+	text-decoration: underline;
+}
+
+.site-info-item h3{
+	font-size: 14px;
+}
+.site-info-item dd{
+	font-size: 12px;
+	line-height: 24px;
+}
+
+
+/*最右边的热线电话*/
+.hot-line-bg{
+	width: 49px;
+	height: 45px;
+	background: url(../img/footer-bg.png) no-repeat 0 -80px;
+}
+
+.contact-title{
+	font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.contact-info{
+	margin-bottom: 30px;
+}
+.contact-number{
+	font-size: 18px;
+    font-weight: 700;
+    color: #666;
+}
+.contact-time{
+	font-size: 12px;
+    color: #999;
+}
+
+.service-desc{
+	font-size: 12px;
+}
+.service-desc+p{
+	font-size: 12px;
+	color: #2bb8aa;
+}
+.service-desc+p a:hover{
+	text-decoration: underline;
+}
+
+
+/*版权*/
+.copyright{
+	padding-top: 28px;
+	text-align: center;
+    font-size: 12px;
+    color: #999;
+    border-top: 1px solid #ddd;
+}
+
+.copyright div{
+	padding: 20px 0;
+}
+.copyright div a{
+	display: block;
+	height: 20px;
+	line-height: 20px;
+}
+.copyright img{
+	vertical-align: bottom;
+}
+
+.copyright a:hover{
+	text-decoration: underline;
+}
+
+/*可信证书*/
+.cert{
+	text-align: center;
+	font-size: 0;
+	margin: 30px 0;
+}
+.cert a{
+	display: inline-block;
+	height: 38px;
+	width: 109px;
+    background-image: url(http://s0.meituan.net/bs/file/?f=fewww:www/css/si/footer.png@b8f4393);
+    background-repeat: no-repeat;
+    margin: 0 3px;
+}
+
+.cert a:nth-of-type(1){
+	background-position: 0 -167px;;
+}
+
+.cert a:nth-of-type(2){
+	background-position: 0 -127px;
+}
+.cert a:nth-of-type(3){
+	background-position: 0 -40px;
+}

@@ -1,0 +1,48 @@
+/*广告推荐*/
+.ads-recommend{
+	padding-bottom: 20px;
+}
+.ads-recommend .recommend-nav li{
+	float: left;
+	width: 92px;
+	border: 1px solid #eee;
+    border-bottom: 0;
+    background: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+    margin-right: -1px;/*解决右边框重叠*/
+}
+.ads-recommend .recommend-nav li a{
+	display: block;
+	padding: 0 15px;
+	color: #666;
+	line-height: 24px;
+}
+
+.ads-recommend .recommend-nav .current a,.ads-recommend .recommend-nav li a:hover{
+	background: #eee;
+}
+
+/*默认隐藏*/
+.ads-recommend .target-div{
+	display: none;
+	width: 100%;
+	padding: 10px;
+	border: 1px solid #eee;
+	font-size: 12px;
+	line-height: 16px;
+}
+
+.ads-recommend .target-div:target{
+	display: block;
+}
+
+.ads-recommend .target-div a{
+	display: inline-block;
+	width: 95px;
+	padding: 0 5px;
+	
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}

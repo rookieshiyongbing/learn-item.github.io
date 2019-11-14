@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关闭按钮</title>
+    <style>
+        body,ul,li,button{margin:0;padding:0;}
+        body{font:12px/1.5 Tahoma;}
+        ul{list-style-type:none;}
+        button{cursor:pointer;}
+        #outer{width:70px;margin:10px auto;}
+        #ime{margin-top:5px;background:#fff;border:1px solid #9a99ff;display:none;}
+        #ime li{width:100%;line-height:24px;display:inline-block;vertical-align:top;}
+        #close{border-top:1px solid #9a99ff;}
+        #ime li a{color:#00c;padding:0 5px;display:block;text-decoration:none;}
+        #ime li a:hover{background:#d9e1f6;}
+    </style>
+</head>
+<body>
+<div id="outer">
+    <button>按钮</button>
+    <ul id="ime">
+        <li><a href="#">第一个</a></li>
+        <li><a href="#">第二个</a></li>
+        <li id="close"><a href="#">关闭</a></li>
+    </ul>
+</div>
+<script>
+    window.onload = function ()
+    {
+        var oBtn = document.getElementsByTagName("button")[0];
+        var oIme = document.getElementById("ime");
+        var oClose = document.getElementById("close");
+        var style = oIme.style;
+        oBtn.onclick = function()
+        {
+            style.display = style.display == "block" ? "none" : "block"
+        };
+        oClose.onclick = function()
+        {
+            style.display = "none"
+        }
+    }
+</script>
+</body>
+</html>

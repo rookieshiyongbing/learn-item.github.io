@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点击Div，显示其innerHTML</title>
+    <style>
+        body{font:12px/1.5 Tahoma;}
+        #outer{width:500px;margin:0 auto;}
+        #outer div{border:2px solid #ccc;padding:10px;margin-bottom:10px;text-indent:2em;cursor:pointer;}
+    </style>
+</head>
+<body>
+<div id="outer">
+    <div>猪肉涨价啦</div>
+    <div>实习不好找啦</div>
+    <div>前端学的头皮发麻啦</div>
+    <div>双十一快到啦</div>
+</div>
+<script>
+    window.onload = function ()
+    {
+        var oDiv = document.getElementById("outer").getElementsByTagName("div");
+        for(var i = 0; i < oDiv.length; i++)
+        {
+            oDiv[i].onclick = function ()
+            {
+                alert(this.innerHTML)
+            }
+        }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+/*************************************************************/
+/*内容区域*/
+.content{
+	width: 1170px;
+	margin: 0 auto;
+}
+/*内容区域的头部*/
+.content-header{
+	width: 924px;
+	height: 478px;
+	/*border: 1px solid blue;*/
+	margin-left: 246px;
+	margin-bottom: 30px;
+}
+
+.content-header-main{
+	width: 689px;
+	height: 478px;
+	margin: 0 18px 0 18px;
+	/*border: 1px solid red;*/
+	float: left;
+	border-bottom: 1px solid #eee;/*推荐下面的线条*/
+}
+
+/*条件过滤*/
+.condition-filter{
+	font-size: 12px;
+}
+.condition-filter dl{
+	height: 53px;
+	line-height: 53px;
+	border-bottom: 1px solid #eee;
+}
+/*清除浮动*/
+.condition-filter dl:after{
+	content: '';
+	display: block;
+	clear:both ;
+}
+.condition-filter dt,.condition-filter dd{
+	float: left;
+}
+/*过滤标题*/
+.condition-filter dt{
+	color: #999;
+	margin-right: 20px;
+}
+.condition-filter dd{
+	margin-right: 23px;
+}
+
+.condition-filter dt i{
+	color: #f1463b;
+	font-size: 16px;
+	margin-right: 5px;
+}
+
+/*更多地区单独处理*/
+.condition-filter .more-area{
+	float: right;
+	display: block;
+	width: 44px;
+	height: 22px;
+	border: 1px solid #eee;
+	margin-top: 15px;
+	
+	padding: 0 12px 0 5px;
+	
+	position: relative;
+}
+/*更多后面的下拉箭头*/
+.condition-filter .more-area .down-arrow{
+	position: absolute;
+	right:3px;
+	top: 9px;
+	border-top-color: #666;
+}
+/*悬浮变色*/
+.condition-filter a:hover{
+	color: #2bb8aa;
+}
+
+
+/*推荐*/
+.recommend-slide-item{
+	display: flex;
+}
+.recommend-slide-item>div{
+	flex: 1;
+	/*border: 1px solid red;*/
+	position: relative;/*给打折标签定位用*/
+}
+
+.recommend-slide-item .left{
+	padding-top: 10px;
+	padding-right: 11px;
+	border-right: 1px solid #eee;
+}
+
+.recommend-slide-item .right{
+	padding-top: 10px;
+	padding-left: 11px;
+}
+/*图片变成块元素，防止“幽灵间隙”*/
+.recommend-slide-item img{
+	display: block;
+	width: 333px;
+    height: 232px;
+    margin-bottom: 20px;
+}
+
+/*描述*/
+.recommend-slide-item .title{
+	float: left;
+	width: 225px;
+	border-right: 1px dashed #eee;
+	margin-bottom: 12px;
+}
+.recommend-slide-item .title a{
+	display: block;
+	font-size: 14px;
+    font-weight: 700;
+    color: #666;
+}
+.recommend-slide-item .title p{
+	font-size: 12px;
+	color: #999;
+	margin-top: 4px;
+	
+	/*字超过一行时要截取*/
+	width: 214px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*价格*/
+.recommend-slide-item .price{
+	float: right;
+	font-size: 30px;
+	font-weight: bold;
+    color: #f76120;
+}
+/*打折标签*/
+.recommend-slide-item .discount{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	width: 61px;
+	height: 50px;
+	background: url(../img/content-bg.png) no-repeat 0 -830px;
+	font-size: 18px;
+	padding: 13px 22px 0 12px;
+    color: #fff;
+    font-weight: bold;
+}
+.recommend-slide-item .left .discount{
+	right:20px;
+}
+
+
+
+
+/*右侧广告*/
+.content-header-right{
+	float: left;
+	width: 199px;
+}
+
+/*二维码*/
+.content-header-right .qrcode-image{
+	border: 1px solid #eee;
+	border-top: none;
+}
+.content-header-right .qrcode-image img{
+	width: 197px;
+    height: 158px;
+
+}
+
+/*每日上新*/
+.daily-new{
+	text-align: center;
+	border: 1px solid #eee;
+	border-top: none;
+}
+.daily-title{
+	font-size: 24px;
+}
+.daily-desc{
+	color: #999;
+    font-size: 14px;
+}
+
+.daily-new img{
+	width: 100%;
+	display: block;
+}

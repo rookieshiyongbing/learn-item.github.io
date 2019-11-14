@@ -1,0 +1,49 @@
+/*样式重置*/
+body,dl,dd,p{
+	margin: 0;
+}
+
+ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,h2,h3{
+	margin: 0;
+}
+
+input[type=text],input[type=submit]{
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+}
+
+/*公共样式*/
+html{
+	box-sizing: border-box;
+}
+*,*:after,*:before{
+	box-sizing: inherit;
+}
+
+body {
+    font:14px/1.5 "微软雅黑",tahoma,sans-serif;
+    color: #666;
+    background-color: #fff;
+}
+
+
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+

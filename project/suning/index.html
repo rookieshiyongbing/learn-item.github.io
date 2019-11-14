@@ -1,0 +1,1023 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>苏宁商城网</title>
+		<link rel="shortcut icon" href="//ssl.suning.com/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="css/font.css" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<script src="./js/jquery-3.2.1.min.js"></script>
+		<script src="./js/show.js"></script>
+		<script src="./js/webp.js"></script>
+	</head>
+	<body>
+		<header>
+			<!--顶部导航start-->
+			<link rel="stylesheet" href="css/header-nav.css" />
+			<nav class="top-nav">
+				<div class="inner clearfix">
+					<ul class="left">
+						<li><a id="collect" href="#"><i class="icon-collect"></i> 收藏苏宁</a></li>
+						<li><a id="login" href="#">登陆</a></li>
+						<li><a id="registe" href="#">注册</a></li>
+					</ul>
+					<ul class="right">
+						<li><a href="#">我的订单</a></li>
+						<li><a href="#">我的苏宁<i class="down-arrow"></i></a></li>
+						<li><a href="#">最近浏览<i class="down-arrow"></i></a></li>
+						<li><a href="#">联系客服<i class="down-arrow"></i></a></li>
+						<li><a href="#">我是商家<i class="down-arrow"></i></a></li>
+						<li><a href="#">代理商招募<i class="down-arrow"></i></a></li>
+						<li><a href="#">更多<i class="down-arrow"></i></a></li>
+					</ul>
+				</div>
+			</nav>
+			<!--顶部导航end-->
+			
+			
+			<!--图标和搜索start-->
+			<link rel="stylesheet" type="text/css" href="css/header-branding.css"/>
+			<div id="header-branding">
+				<div>
+					<h1>
+						<a href="#" class="site-logo">
+			                <img src="./img/sn1.png" alt="北京苏宁网">
+			            </a>	
+					</h1>
+					<div class="city">
+						<h2><a href="#">北京</a></h2>
+						<a class="switch-city" href="#">切换城市</a>
+					</div>
+				</div>
+				
+				<div class="search-box">
+					<form class="clearfix" action="http://www.meituan.com/s/" method="get">
+						<div class="group-buying">
+							<div>苏宁</div>
+							<i class="down-arrow"></i>
+						</div>
+						<input type="text" name="w" placeholder="请输入商品名称、地址等" autocomplete="off" />
+						<input type="submit" value="搜索" />
+					</form>
+					<div class="hot-search">
+						<a class="hot-link" href="#" >取暖器</a>
+						<a class="hot-link" href="#" >苏泊尔9.9元抢</a>
+						<a class="hot-link" href="#" >荣耀手机</a>
+						<a class="hot-link" href="#" >空调</a>
+						<a class="hot-link" href="#" >羽绒服</a>
+						<a class="hot-link" href="#" >牛奶</a>
+						<a class="hot-link" href="#" >笔记本</a>
+						<a class="hot-link" href="#" >生鲜</a>
+						<a class="hot-link" href="#" >生活家电</a>
+					</div>
+				</div>
+				
+				<div class="commitment">
+					<a href="">
+						<span class="commitment-item">
+							<i class="icon-commitment-1"></i>
+							随时退
+						</span>
+						<span class="commitment-item">
+							<i class="icon-commitment-2"></i>
+							不满意免单
+						</span>
+						<span class="commitment-item">
+							<i class="icon-commitment-3"></i>
+							过期退
+						</span>
+						
+					</a>
+				</div>
+			</div>
+			<!--图标和搜索end-->
+			
+			<!--导航2start-->
+			<link rel="stylesheet" type="text/css" href="css/header-bottom-nav.css"/>
+			<div class="bottom-nav clearfix">
+				<div class="all-category">
+					<span>全部分类</span>
+					<!--分类导航-->
+					<ul class="category-nav-level-1">
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">手机</a></dt>
+								<dd><a href="#">运营商</a></dd>
+								<dd><a href="#">智能数码</a></dd>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active1">
+								<div class="food">
+									<h2>手机</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>苹果手机</span>
+									<span>金立手机</span>
+									<span>oppo手机</span>
+									<span>华为手机</span>
+									<span>小米手机</span>
+									<span>努比亚手机</span>
+									<span>以旧换新</span>
+									<span>手机维修</span>
+									<span>正品行货</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">家用电器</a></dt>
+								<dd><a href="#">电视</a>/<a href="#">空调</a></dd>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active2">
+								<div class="food">
+									<h2>家用电器</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>液晶电视</span>
+									<span>平板电视</span>
+									<span>4K超清</span>
+									<span>海信</span>
+									<span>PPTV</span>
+									<span>三星</span>
+									<span>长虹</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt ><a href="#">电脑办公</a>/<a href="#" >个性化定制</a></dt>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active3">
+								<div class="food">
+									<h2>电脑办公</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>笔记本</span>
+									<span>一体机</span>
+									<span>游戏本</span>
+									<span>路由器</span>
+									<span>无线网卡</span>
+									<span>鼠标</span>
+									<span>主机</span>
+									<span>移动硬盘</span>
+								</div>
+								<div class="food">
+									<h2>个性化定制</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>程序员标配</span>
+									<span>时尚白领专属</span>
+									<span>居家旅行必备</span>
+									<span>送人首选</span>
+									<span>DIY</span>
+									<span>高逼格</span>
+									<span>有新意</span>
+									<span>投影机</span>
+									<span>打印机</span>
+									<span>马克笔</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">家居/家具/家装</a></dt>
+							</dl>
+							<div class="detailed active4">
+								<div class="food">
+									<h2>家纺</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>床品套件</span>
+									<span>枕芯</span>
+									<span>鸭绒被</span>
+									<span>被单</span>
+									<span>被罩</span>
+									<span>毛毯</span>
+									<span>毛巾被</span>
+									<span>窗纱</span>
+
+								</div>
+								<div class="food">
+									<h2>家具</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>圆形舒适床</span>
+									<span>实木衣柜</span>
+									<span>真皮沙发</span>
+									<span>时尚挂壁</span>
+									<span>餐桌</span>
+									<span>电视柜</span>
+									<span>电脑椅</span>
+									<span>茶几</span>
+									<span>地板</span>
+									<span>书房家具</span>
+									<span>置物架</span>
+									<span>床垫</span>
+									<span>电脑桌</span>
+									<span>酒柜</span>
+									<span>地毯</span>
+									<span>厨房橱柜</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">男装/女装</a></dt>
+								<dd><a href="#">足球骑行</a></dd>
+								<dd><a href="#">运动户外</a></dd>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active5">
+								<div class="food" >
+									<h2>男装</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify" >
+									<span>男士西服</span>
+									<span>男士皮鞋</span>
+									<span>加厚羽绒服</span>
+									<span>毛呢大衣</span>
+									<span>休闲系列</span>
+									<span>面包服</span>
+									<span>轻羽绒服</span>
+									<span>牛仔裤</span>
+									<span>棉袜</span>
+									<span>运动鞋</span>
+								</div>
+								<div class="food">
+									<h2>女装</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>打底裤</span>
+									<span>女士皮鞋</span>
+									<span>加厚羽绒服</span>
+									<span>毛呢大衣</span>
+									<span>休闲系列</span>
+									<span>面包服</span>
+									<span>轻羽绒服</span>
+									<span>牛仔裤</span>
+									<span>棉袜</span>
+									<span>运动鞋</span>
+									<span>高领毛衣</span>
+									<span>帽子</span>
+									<span>女士内衣</span>
+									<span>手套</span>
+									<span>丝袜</span>
+									<span>时尚围巾</span>
+									<span>御寒口罩</span>
+									<span>包臀裙</span>
+									<span>小脚裤</span>
+									<span>九分裤</span>
+									<span>皮裤</span>
+									<span>哈伦裤</span>
+									<span>百褶裙</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">图书理财</a>/<a href="#">名家名著</a></dt>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active6">
+								<div class="food">
+									<h2>图书理财</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>基金</span>
+									<span>股票</span>
+									<span>保险</span>
+									<span>地产</span>
+									<span>投资</span>
+									<span>管理大全</span>
+									<span>股票详解</span>
+									<span>理财分析</span>
+								</div>
+								<div class="food">
+									<h2>名家名著</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>鲁迅中国说</span>
+									<span>钱钟书</span>
+									<span>悲惨世界</span>
+									<span>茶花女</span>
+									<span>香山居士</span>
+									<span>我的奋斗</span>
+									<span>读书的意义</span>
+									<span>心灵鸡汤</span>
+									<span>哥白尼</span>
+									<span>欧亨利</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">食品</a></dt>
+								<dd><a href="#">生鲜</a></dd>
+								<dd><a href="#">酒水</a></dd>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active7">
+								<div class="food">
+									<h2>电脑办公</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>笔记本</span>
+									<span>一体机</span>
+									<span>游戏本</span>
+									<span>路由器</span>
+									<span>无线网卡</span>
+									<span>鼠标</span>
+									<span>主机</span>
+									<span>移动硬盘</span>
+								</div>
+								<div class="food">
+									<h2>个性化定制</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>程序员标配</span>
+									<span>时尚白领专属</span>
+									<span>居家旅行必备</span>
+									<span>送人首选</span>
+									<span>DIY</span>
+									<span>高逼格</span>
+									<span>有新意</span>
+									<span>投影机</span>
+									<span>打印机</span>
+									<span>马克笔</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">个性化妆</a></dt>
+								<dd><a href="#">美发</a></dd>
+								<dd><a href="#">美甲美睫</a></dd>
+							</dl>
+							<i class="icon-right-arrow-bold"></i>
+							<div class="detailed active8">
+								<div class="food">
+									<h2>图书理财</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>基金</span>
+									<span>股票</span>
+									<span>保险</span>
+									<span>地产</span>
+									<span>投资</span>
+									<span>管理大全</span>
+									<span>股票详解</span>
+									<span>理财分析</span>
+								</div>
+								<div class="food">
+									<h2>名家名著</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>鲁迅中国说</span>
+									<span>钱钟书</span>
+									<span>悲惨世界</span>
+									<span>茶花女</span>
+									<span>香山居士</span>
+									<span>我的奋斗</span>
+									<span>读书的意义</span>
+									<span>心灵鸡汤</span>
+									<span>哥白尼</span>
+									<span>欧亨利</span>
+								</div>
+							</div>
+						</li>
+						<li class="category-nav-item-1">
+							<dl class="category-nav-level-2 clearfix">
+								<dt><a href="#">今日新单</a></dt>
+							</dl>
+							<div class="detailed active9">
+								<div class="food">
+									<h2>电脑办公</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>笔记本</span>
+									<span>一体机</span>
+									<span>游戏本</span>
+									<span>路由器</span>
+									<span>无线网卡</span>
+									<span>鼠标</span>
+									<span>主机</span>
+									<span>移动硬盘</span>
+								</div>
+								<div class="food">
+									<h2>个性化定制</h2>
+									<p>
+										更多>
+									</p>
+								</div>
+								<div class="classify">
+									<span>程序员标配</span>
+									<span>时尚白领专属</span>
+									<span>居家旅行必备</span>
+									<span>送人首选</span>
+									<span>DIY</span>
+									<span>高逼格</span>
+									<span>有新意</span>
+									<span>投影机</span>
+									<span>打印机</span>
+									<span>马克笔</span>
+								</div>
+							</div>
+						</li>	
+					</ul>
+				</div>
+				<ul class="nav-bar">
+					<li><a href="#">首页</a></li>
+					<li><a href="#">今日新单</a></li>
+					<li><a href="#">家电</a></li>
+					<li><a href="#">身边外卖</a></li>
+					<li><a href="#">名店抢购</a></li>
+				</ul>
+			</div>
+			<!--导航2end-->
+		</header>
+		
+		<div class="content">
+			<!--content-header-->
+			<link rel="stylesheet" type="text/css" href="css/content-header.css"/>
+			<div class="content-header">
+				<!--中间-->
+				<div class="content-header-main">
+					<!--条件过滤start-->
+					<ul class="condition-filter">
+						<li>
+							<dl>
+								<dt><i class="icon-hot"></i>热门任性买</dt>
+								<dd><a href="#">大聚惠</a></dd>
+								<dd><a href="#">母婴玩具</a></dd>
+								<dd><a href="#">苏宁超市</a></dd>
+								<dd><a href="#">电器城</a></dd>
+								<dd><a href="#">生活家电</a></dd>
+								<dd><a href="#">时尚服饰</a></dd>
+								<dd><a href="#">海外购</a></dd>
+								<dd><a href="#">特卖</a></dd>
+								<dd><a href="#">苏宁金融</a></dd>
+							</dl>
+						</li>
+						
+						<li>
+							<a class="more-area" href="#">更多<i class="down-arrow"></i></a>
+							<dl>
+								<dt><i class="icon-position"></i>全部区域</dt>
+								<dd><a href="#">朝阳区</a></dd>
+								<dd><a href="#">海淀区</a></dd>
+								<dd><a href="#">丰台区</a></dd>
+								<dd><a href="#">西城区</a></dd>
+								<dd><a href="#">东城区</a></dd>
+								<dd><a href="#">昌平区</a></dd>
+								<dd><a href="#">石景山区</a></dd>
+								<dd><a href="#">通州区</a></dd>
+								<dd><a href="#">大兴区</a></dd>
+							</dl>
+							
+						</li>
+						<li>
+							<dl>
+								<dt><i class="icon-trading-area"></i>热门商圈</dt>
+								<dd><a href="#">望京</a></dd>
+								<dd><a href="#">昌平镇</a></dd>
+								<dd><a href="#">亦庄</a></dd>
+								<dd><a href="#">中关村</a></dd>
+								<dd><a href="#">远大路</a></dd>
+								<dd><a href="#">西红门</a></dd>
+								<dd><a href="#">双井</a></dd>
+								<dd><a href="#">大望路</a></dd>
+								<dd><a href="#">黄村</a></dd>
+								<dd><a href="#">牡丹园/北太平庄</a></dd>
+							</dl>
+						</li>
+					</ul>
+					<!--条件过滤end-->
+
+
+					<!--推荐start-->
+					<ul class="recommend-slide">
+						<li class="recommend-slide-item">
+							<div class="left">
+								<a href="#">
+									<img src="img/sn.png" >
+									<div class="discount">
+										9.1
+									</div>
+								</a>
+								<div class="title">
+									<a href="#">领优惠券</a>
+									<p>年底优惠，不容错过</p>
+								</div>
+								<div class="price"> ¥ 150 </div>
+							</div>
+							<div class="right">
+								<a href="#">
+									<img src="img/sj.png" >
+									<div class="discount">
+										9.5
+									</div>
+								</a>
+								<div class="title">
+									<a href="#">智能机</a>
+									<!--字如果超出一行 要截取-->
+									<p>110元代金券1张，可叠加使用110元代金券1张，可叠加使用</p>
+								</div>
+								<div class="price"> ¥ 110 </div>
+							</div>
+						</li>
+					</ul>
+					<!--推荐end-->
+					
+				</div>
+				
+				<!--右边-->
+				<div class="content-header-right">
+					<div class="qrcode-image">
+						<img src="img/pb.png">
+					</div>
+					<div class="daily-new">
+						<a href="#">
+							<div class="daily-title">每日上新</div>
+							<div class="daily-desc">吃喝玩乐最低价</div>
+							<img width="198" src="img/pb.jpg">
+						</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!--具体分类列表-->
+			<!--category-list-->
+			<link rel="stylesheet" type="text/css" href="css/content-category-list.css"/>
+			<div class="category-list">
+				
+				<div class="category-item" id="food">
+					<div class="category-item-head clearfix">
+						<img src="./img/jd.png" alt="">
+						<a class="title" href="#">
+							<!--<i class="icon-food"></i>-->
+							家电</a>
+						<ul class="category-item-nav">
+							<li><a href="#">吹风机</a></li>
+							<li><a href="#">空调</a></li>
+							<li><a href="#">油烟机</a></li>
+							<li><a href="#">空气净化器</a></li>
+							<li><a href="#">无烟锅</a></li>
+							<li><a href="#">加湿机</a></li>
+							<li><a href="#">电饭煲</a></li>
+							<li><a href="#">全部<i class="icon-right-arrow-thin"></i></a></li>
+						</ul>
+					</div>
+					
+					<div class="category-item-body clearfix">
+						
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/food.jpg">
+								<!--<span class="mark">-->
+								<!--<span class="mark-duotaocan"></span>-->
+								<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【全店通用】年底大促，疯狂打折</span>
+								<span>即刻下单，36小时内送达，高品质服务</span>
+							</a>
+							<div class="detail">
+								<span class="price">¥1200</span>
+								<span class="value">原价 <del class="num"><span>¥</span>1500</del></span>
+								<span class="sales">已售323196</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">33883人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+						
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/food_one.jpg">
+								<!--<span class="mark">-->
+								<!--<span class="mark-duotaocan"></span>-->
+								<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【全店通用】年底大促，疯狂打折</span>
+								<span>即刻下单，36小时内送达，高品质服务</span>
+							</a>
+							<div class="detail">
+								<span class="price">¥1200</span>
+								<span class="value">原价 <del class="num"><span>¥</span>1500</del></span>
+								<span class="sales">已售323196</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">33883人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+						
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/food_two.png">
+								<!--<span class="mark">-->
+								<!--<span class="mark-duotaocan"></span>-->
+								<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【全店通用】年底大促，疯狂打折</span>
+								<span>即刻下单，36小时内送达，高品质服务</span>
+							</a>
+							<div class="detail">
+								<span class="price">¥1200</span>
+								<span class="value">原价 <del class="num"><span>¥</span>1500</del></span>
+								<span class="sales">已售323196</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">33883人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+						
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/food_three.png">
+								<!--<span class="mark">-->
+								<!--<span class="mark-duotaocan"></span>-->
+								<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【全店通用】年底大促，疯狂打折</span>
+								<span>即刻下单，36小时内送达，高品质服务</span>
+							</a>
+							<div class="detail">
+								<span class="price">¥1200</span>
+								<span class="value">原价 <del class="num"><span>¥</span>1500</del></span>
+								<span class="sales">已售323196</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">33883人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+						
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/food_five.png">
+								<!--<span class="mark">-->
+								<!--<span class="mark-duotaocan"></span>-->
+								<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【全店通用】年底大促，疯狂打折</span>
+								<span>即刻下单，36小时内送达，高品质服务</span>
+							</a>
+							<div class="detail">
+								<span class="price">¥1200</span>
+								<span class="value">原价 <del class="num"><span>¥</span>1500</del></span>
+								<span class="sales">已售323196</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">33883人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+						
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/food_two.png">
+								<!--<span class="mark">-->
+									<!--<span class="mark-duotaocan"></span>-->
+									<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【全店通用】年底大促，疯狂打折</span>
+								<span>即刻下单，36小时内送达，高品质服务</span>
+							</a>
+							<div class="detail">
+							    <span class="price">¥1200</span>
+							    <span class="value">原价 <del class="num"><span>¥</span>1500</del></span>
+							    <span class="sales">已售323196</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">33883人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+						
+						
+					</div>
+					
+					<div class="category-item-foot">
+						<a href="#">更多家电任性买，请点击查看<i class="icon-right-arrow-thin"></i></a>
+					</div>
+				</div>
+				
+				
+				<!--今日疯抢-->
+				<div class="category-item" id="movie">
+					<div class="category-item-head clearfix">
+						<a class="title" href="#">
+							<!--<i class="icon-movie"></i>-->
+							<img src="./img/icon-火.png" alt="">
+							今日疯抢</a>
+						<ul class="category-item-nav">
+							<li><a href="#">今日疯抢</a></li>
+							<li><a href="#">电器任性买</a></li>
+							<li><a href="#">返场活动</a></li>
+							<li><a href="#">最新家电</a></li>
+							<li><a href="#">年底清仓</a></li>
+							<li><a href="#">全部<i class="icon-right-arrow-thin"></i></a></li>
+						</ul>
+					</div>
+					<div class="category-item-body clearfix">
+						<!--start-->
+						<div class="category-item-detail">
+							<a class="cover" href="#">
+								<img src="img/fire.jpg">
+								<!--<span class="mark">-->
+									<!--<span class="mark-duotaocan"></span>-->
+									<!--<span class="mark-mianyuyue"></span>-->
+								<!--</span>-->
+							</a>
+							<a class="title" href="#">
+								<span>【5店通用】美国恒温热水器</span>
+								<span>13升容量，持久恒温</span>
+							</a>
+							<div class="detail">
+							    <span class="price">¥1399</span>
+							    <span class="value">原价 <del class="num"><span>¥</span>1566</del></span>
+							    <span class="sales">已售57</span>
+							</div>
+							<div class="comment">
+								<a href="#">
+									<span class="comment-star">
+										<span class="comment-rate"></span>
+									</span>
+									<span class="comment-count">6人评价</span>
+								</a>
+							</div>
+						</div>
+						<!--end-->
+
+					</div>
+					
+					<div class="category-item-foot">
+						<a href="#">更多家电任性买，请点击查看<i class="icon-right-arrow-thin"></i></a>
+					</div>
+				</div>
+				
+				<!--漂浮在左边-->
+				<link rel="stylesheet" type="text/css" href="css/left-fixed-nav.css"/>
+				<ul class="fixed-nav">
+					<li><a href="#food"><i class="icon-food"></i>家电</a></li>
+					<li><a href="#"><i class="icon-cup"></i>潮流品牌</a></li>
+					<li><a href="#"><i class="icon-movie"></i>今日疯抢</a></li>
+					<li><a href="#"><i class="icon-hotel"></i>生鲜</a></li>
+					<li><a href="#"><i class="icon-life-service"></i>生活服务</a></li>
+					<li><a href="#"><i class="icon-beauty"></i>丽人</a></li>
+					<li><a href="#"><i class="icon-fly"></i>旅游</a></li>
+				</ul>
+			</div>
+			
+			
+			<!--广告推荐-->
+			<link rel="stylesheet" type="text/css" href="css/ads-recommend.css"/>
+			<div class="ads-recommend">
+				<ul class="recommend-nav clearfix">
+					<li class="current"><a href="#group-buying-category">任性分类</a></li>
+					<li><a href="#hot-position">热门地标</a></li>
+					<li><a href="#surrounding-city">周边城市</a></li>
+					<li><a href="#brand-recommend">品牌推荐</a></li>
+					<li><a href="#special-recommend">专题推荐</a></li>
+					<li><a href="#category-recommend">品类推荐</a></li>
+					<li><a href="#friendship-link">友情链接</a></li>
+				</ul>
+				<div class="target-div" id="group-buying-category">
+					<a href="#">家电任性买</a>
+					<a href="#">电影任性买</a>
+					<a href="#">休闲娱乐任性买</a>
+					<a href="#">旅游任性买</a>
+					<a href="#">生活服务任性买</a>
+					<a href="#">购物任性买</a>
+					<a href="#">丽人任性买</a>
+					<a href="#">任性买评论</a>
+					<a href="#">品牌任性买</a>
+					<a href="#">专题任性买</a>
+					<a href="#">苏宁任性买</a>
+				</div>
+				<div class="target-div" id="hot-position">
+					<a href="#">望京任性买</a>
+					<a href="#">朝阳大悦城任性买</a>
+					<a href="#">回龙观任性买</a>
+					<a href="#">五道口任性买</a>
+					<a href="#">中关村任性买</a>
+					<a href="#">亚运村任性买</a>
+					<a href="#">昌平镇任性买</a>
+					<a href="#">西单任性买</a>
+					<a href="#">劲松任性买</a>
+					<a href="#">天通苑任性买</a>
+					<a href="#">远大路任性买</a>
+					<a href="#">魏公村任性买</a>
+					<a href="#">双桥任性买</a>
+					<a href="#">十里堡任性买 </a>
+					<a href="#">清河任性买</a>
+					<a href="#">安定门任性买</a>
+					<a href="#">十八里店任性买</a>
+					<a href="#">航天桥任性买</a>
+					<a href="#">王府井/东单任性买</a>
+					<a href="#">公主坟/万寿路任性买</a>
+					<a href="#">颐和园任性买</a>
+					<a href="#">北京西站/六里桥任性买</a>
+					<a href="#">朝外大街任性买</a>
+				</div>
+			</div>
+			
+		</div>
+		
+		
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<footer>
+			<!--网站信息-->
+			<div class="site-info">
+				<div class="site-info-item">
+					<dl>
+						<dt><h3>获取更新</h3></dt>
+						<dd><a href="#">邮件订阅</a></dd>
+						<dd><a href="#">iPhone/Android</a></dd>
+						<dd><a href="#">苏宁QQ空间</a></dd>
+						<dd><a href="#">苏宁新浪微博</a></dd>
+						<dd><a href="#">sitemap</a></dd>
+						<dd><a href="#">RSS订阅</a></dd>
+					</dl>
+				</div>
+				<div class="site-info-item">
+					<dl>
+						<dt><h3>商务合作</h3></dt>
+						<dd><a href="#">商家合作</a></dd>
+						<dd><a href="#">苏宁商家营销平台</a></dd>
+						<dd><a href="#">到店商城代理商招募</a></dd>
+						<dd><a href="#">市场合作</a></dd>
+						<dd><a href="#">苏宁联盟</a></dd>
+						<dd><a href="#">苏宁云</a></dd>
+						<dd><a href="#">廉正邮箱</a></dd>
+						<dd><a href="#">聚宝盆商城开放平台</a></dd>
+						<dd><a href="#">苏宁点评智能收银机</a></dd>
+					</dl>
+				</div>
+				<div class="site-info-item">
+					<dl>
+						<dt><h3>获取更新</h3></dt>
+						<dd><a href="#">邮件订阅</a></dd>
+						<dd><a href="#">iPhone/Android</a></dd>
+						<dd><a href="#">苏宁QQ空间</a></dd>
+						<dd><a href="#">苏宁新浪微博</a></dd>
+						<dd><a href="#">sitemap</a></dd>
+						<dd><a href="#">RSS订阅</a></dd>
+					</dl>
+				</div>
+				<div class="site-info-item">
+					<dl>
+						<dt><h3>获取更新</h3></dt>
+						<dd><a href="#">邮件订阅</a></dd>
+						<dd><a href="#">iPhone/Android</a></dd>
+						<dd><a href="#">苏宁QQ空间</a></dd>
+						<dd><a href="#">苏宁新浪微博</a></dd>
+						<dd><a href="#">sitemap</a></dd>
+						<dd><a href="#">RSS订阅</a></dd>
+					</dl>
+				</div>
+				
+				<div class="site-info-item">
+					<div class="site-info-service-content">
+						<div class="hot-line-bg"></div>
+						<p class="contact-title">客服电话</p>
+						<p class="contact-info">
+							<span class="contact-number">1010150088</span>
+							<span class="contact-time">(9:00-23:00)</span>
+						</p>
+						<p class="service-desc">退款、退换货、查看苏尼易通</p>
+						<p><a href="#">参考教程，轻松搞定!</a></p>
+					</div>
+				</div>
+				
+			</div>
+			<!--版权-->
+			<div class="copyright">
+				<p>
+					©2017<a href="#">苏宁网任性买</a> meituan.com
+					<a href="#" target="_blank">京ICP证070791号</a> |
+	    			<a href="#">京ICP备10211739号</a> |
+	        		<a href="#"> 电子公告服务规则</a>
+				</p>
+				<div>
+					<a href="#">广播电视节目制作经营许可证（京）字第03889号</a>
+					<a href="#"><img src="img/wanan.png" >京公网安备11010502025545号</a>
+				</div>
+			</div>
+			<!--可信证书-->
+			<div class="cert">
+				<a href="#"></a>
+				<a href="#"></a>
+				<a href="#"></a>
+			</div>
+			<a href="../一点资讯/index.html" style="margin-left:750px">一点资讯链接</a>
+		</footer>
+		<!--右下角固定按钮-->
+		<link rel="stylesheet" type="text/css" href="css/right-fixed.css"/>
+		<ul class="fixbar-container">
+			<li><a href="#"><i></i><span>回到顶部</span></a></li>
+			<li><a href="#"><i></i><span>问卷调查</span></a></li>
+			<li><a href="#"><i></i><span>帮助中心</span></a></li>
+			<li><a href="#"><i></i><span>意见反馈</span></a></li>
+		</ul>
+	</body>
+</html>
